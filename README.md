@@ -34,6 +34,7 @@
 
 ### Data Insights: Olympic Outliers
    Youngest participant ever -  Dimitrios Loundras (Greece), Athens 1896 - 10 years Bronze in Gymnastics Men's Parallel Bars, Teams
+
 ![alternative text](reports/img/youngest_winner.png)
     
    Age of the oldest participant ever - John Quincy Adams Ward (USA) - 97 years
