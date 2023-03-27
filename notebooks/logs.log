@@ -1,0 +1,1979 @@
+2022-12-15 13:37:44,748:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 13:37:44,749:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 13:37:44,749:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 13:37:44,749:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 13:38:02,851:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-12-15 13:38:03,931:INFO:PyCaret ClassificationExperiment
+2022-12-15 13:38:03,931:INFO:Logging name: olympics
+2022-12-15 13:38:03,932:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-12-15 13:38:03,932:INFO:version 3.0.0.rc4
+2022-12-15 13:38:03,932:INFO:Initializing setup()
+2022-12-15 13:38:03,932:INFO:self.USI: 9509
+2022-12-15 13:38:03,932:INFO:self.variable_keys: {'memory', '_gpu_n_jobs_param', '_available_plots', 'html_param', 'y_test', 'master_model_container', 'fix_imbalance', 'log_plots_param', 'logging_param', 'fold_shuffle_param', 'seed', 'data', 'exp_id', 'idx', 'display_container', '_ml_usecase', 'X_train', '_all_metrics', 'n_jobs_param', 'fold_groups_param', '_is_multiclass', 'fold_generator', 'variable_keys', 'X', 'target_param', 'pipeline', 'X_test', 'y', 'y_train', '_all_models_internal', '_all_models', 'gpu_param', 'USI', 'exp_name_log'}
+2022-12-15 13:38:03,932:INFO:Checking environment
+2022-12-15 13:38:03,932:INFO:python_version: 3.10.8
+2022-12-15 13:38:03,932:INFO:python_build: ('main', 'Nov 24 2022 08:09:04')
+2022-12-15 13:38:03,932:INFO:machine: x86_64
+2022-12-15 13:38:03,932:INFO:platform: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 13:38:03,932:INFO:Memory: svmem(total=17179869184, available=6659252224, percent=61.2, used=9911676928, free=219049984, active=6446354432, inactive=6308663296, wired=3465322496)
+2022-12-15 13:38:03,932:INFO:Physical Core: 2
+2022-12-15 13:38:03,933:INFO:Logical Core: 4
+2022-12-15 13:38:03,933:INFO:Checking libraries
+2022-12-15 13:38:03,933:INFO:System:
+2022-12-15 13:38:03,933:INFO:    python: 3.10.8 (main, Nov 24 2022, 08:09:04) [Clang 14.0.6 ]
+2022-12-15 13:38:03,933:INFO:executable: /Users/rajendravrk/opt/anaconda3/envs/MLG/bin/python
+2022-12-15 13:38:03,933:INFO:   machine: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 13:38:03,933:INFO:PyCaret required dependencies:
+2022-12-15 13:38:03,933:INFO:                 pip: 22.2.2
+2022-12-15 13:38:03,933:INFO:          setuptools: 65.5.0
+2022-12-15 13:38:03,933:INFO:             pycaret: 3.0.0rc4
+2022-12-15 13:38:03,933:INFO:             IPython: 8.6.0
+2022-12-15 13:38:03,933:INFO:          ipywidgets: 8.0.3
+2022-12-15 13:38:03,933:INFO:                tqdm: 4.64.1
+2022-12-15 13:38:03,933:INFO:               numpy: 1.22.3
+2022-12-15 13:38:03,933:INFO:              pandas: 1.4.2
+2022-12-15 13:38:03,934:INFO:              jinja2: 3.1.2
+2022-12-15 13:38:03,934:INFO:               scipy: 1.8.1
+2022-12-15 13:38:03,934:INFO:              joblib: 1.2.0
+2022-12-15 13:38:03,934:INFO:             sklearn: 1.1.3
+2022-12-15 13:38:03,934:INFO:                pyod: 1.0.6
+2022-12-15 13:38:03,934:INFO:            imblearn: 0.9.1
+2022-12-15 13:38:03,934:INFO:   category_encoders: 2.5.1.post0
+2022-12-15 13:38:03,934:INFO:            lightgbm: 3.3.3
+2022-12-15 13:38:03,934:INFO:               numba: 0.55.2
+2022-12-15 13:38:03,934:INFO:            requests: 2.28.1
+2022-12-15 13:38:03,934:INFO:          matplotlib: 3.6.2
+2022-12-15 13:38:03,934:INFO:          scikitplot: 0.3.7
+2022-12-15 13:38:03,934:INFO:         yellowbrick: 1.5
+2022-12-15 13:38:03,934:INFO:              plotly: 5.11.0
+2022-12-15 13:38:03,934:INFO:             kaleido: 0.2.1
+2022-12-15 13:38:03,934:INFO:         statsmodels: 0.13.5
+2022-12-15 13:38:03,935:INFO:              sktime: 0.13.4
+2022-12-15 13:38:03,935:INFO:               tbats: 1.1.2
+2022-12-15 13:38:03,935:INFO:            pmdarima: 1.8.5
+2022-12-15 13:38:03,935:INFO:              psutil: 5.9.0
+2022-12-15 13:38:03,935:INFO:PyCaret optional dependencies:
+2022-12-15 13:38:03,942:INFO:                shap: Not installed
+2022-12-15 13:38:03,942:INFO:           interpret: Not installed
+2022-12-15 13:38:03,942:INFO:                umap: Not installed
+2022-12-15 13:38:03,942:INFO:    pandas_profiling: Not installed
+2022-12-15 13:38:03,942:INFO:  explainerdashboard: Not installed
+2022-12-15 13:38:03,942:INFO:             autoviz: Not installed
+2022-12-15 13:38:03,942:INFO:           fairlearn: Not installed
+2022-12-15 13:38:03,943:INFO:             xgboost: Not installed
+2022-12-15 13:38:03,943:INFO:            catboost: Not installed
+2022-12-15 13:38:03,943:INFO:              kmodes: Not installed
+2022-12-15 13:38:03,943:INFO:             mlxtend: Not installed
+2022-12-15 13:38:03,943:INFO:       statsforecast: Not installed
+2022-12-15 13:38:03,943:INFO:        tune_sklearn: Not installed
+2022-12-15 13:38:03,943:INFO:                 ray: Not installed
+2022-12-15 13:38:03,943:INFO:            hyperopt: Not installed
+2022-12-15 13:38:03,943:INFO:              optuna: Not installed
+2022-12-15 13:38:03,943:INFO:               skopt: Not installed
+2022-12-15 13:38:03,943:INFO:              mlflow: Not installed
+2022-12-15 13:38:03,943:INFO:              gradio: Not installed
+2022-12-15 13:38:03,943:INFO:             fastapi: Not installed
+2022-12-15 13:38:03,943:INFO:             uvicorn: Not installed
+2022-12-15 13:38:03,943:INFO:              m2cgen: Not installed
+2022-12-15 13:38:03,943:INFO:           evidently: Not installed
+2022-12-15 13:38:03,943:INFO:                nltk: Not installed
+2022-12-15 13:38:03,943:INFO:            pyLDAvis: Not installed
+2022-12-15 13:38:03,944:INFO:              gensim: Not installed
+2022-12-15 13:38:03,944:INFO:               spacy: Not installed
+2022-12-15 13:38:03,944:INFO:           wordcloud: Not installed
+2022-12-15 13:38:03,944:INFO:            textblob: Not installed
+2022-12-15 13:38:03,944:INFO:               fugue: Not installed
+2022-12-15 13:38:03,944:INFO:           streamlit: Not installed
+2022-12-15 13:38:03,944:INFO:             prophet: Not installed
+2022-12-15 13:38:03,944:INFO:None
+2022-12-15 13:38:03,944:INFO:Set up data.
+2022-12-15 13:38:05,029:INFO:Set up train/test split.
+2022-12-15 13:38:05,397:INFO:Set up index.
+2022-12-15 13:38:05,407:INFO:Assigning column types.
+2022-12-15 13:38:05,436:INFO:Set up folding strategy.
+2022-12-15 13:38:05,437:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2022-12-15 13:38:05,937:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 13:38:06,010:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 13:38:06,798:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 13:53:55,135:INFO:PyCaret ClassificationExperiment
+2022-12-15 13:53:55,135:INFO:Logging name: olympics
+2022-12-15 13:53:55,136:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-12-15 13:53:55,136:INFO:version 3.0.0.rc4
+2022-12-15 13:53:55,136:INFO:Initializing setup()
+2022-12-15 13:53:55,136:INFO:self.USI: 3c7a
+2022-12-15 13:53:55,136:INFO:self.variable_keys: {'memory', '_gpu_n_jobs_param', '_available_plots', 'html_param', 'y_test', 'master_model_container', 'fix_imbalance', 'log_plots_param', 'logging_param', 'fold_shuffle_param', 'seed', 'data', 'exp_id', 'idx', 'display_container', '_ml_usecase', 'X_train', '_all_metrics', 'n_jobs_param', 'fold_groups_param', '_is_multiclass', 'fold_generator', 'variable_keys', 'X', 'target_param', 'pipeline', 'X_test', 'y', 'y_train', '_all_models_internal', '_all_models', 'gpu_param', 'USI', 'exp_name_log'}
+2022-12-15 13:53:55,136:INFO:Checking environment
+2022-12-15 13:53:55,136:INFO:python_version: 3.10.8
+2022-12-15 13:53:55,136:INFO:python_build: ('main', 'Nov 24 2022 08:09:04')
+2022-12-15 13:53:55,136:INFO:machine: x86_64
+2022-12-15 13:53:55,136:INFO:platform: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 13:53:55,136:INFO:Memory: svmem(total=17179869184, available=6962475008, percent=59.5, used=9972449280, free=494759936, active=6474768384, inactive=6382366720, wired=3497680896)
+2022-12-15 13:53:55,136:INFO:Physical Core: 2
+2022-12-15 13:53:55,137:INFO:Logical Core: 4
+2022-12-15 13:53:55,137:INFO:Checking libraries
+2022-12-15 13:53:55,137:INFO:System:
+2022-12-15 13:53:55,137:INFO:    python: 3.10.8 (main, Nov 24 2022, 08:09:04) [Clang 14.0.6 ]
+2022-12-15 13:53:55,137:INFO:executable: /Users/rajendravrk/opt/anaconda3/envs/MLG/bin/python
+2022-12-15 13:53:55,137:INFO:   machine: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 13:53:55,137:INFO:PyCaret required dependencies:
+2022-12-15 13:53:55,137:INFO:                 pip: 22.2.2
+2022-12-15 13:53:55,137:INFO:          setuptools: 65.5.0
+2022-12-15 13:53:55,138:INFO:             pycaret: 3.0.0rc4
+2022-12-15 13:53:55,138:INFO:             IPython: 8.6.0
+2022-12-15 13:53:55,138:INFO:          ipywidgets: 8.0.3
+2022-12-15 13:53:55,138:INFO:                tqdm: 4.64.1
+2022-12-15 13:53:55,138:INFO:               numpy: 1.22.3
+2022-12-15 13:53:55,138:INFO:              pandas: 1.4.2
+2022-12-15 13:53:55,138:INFO:              jinja2: 3.1.2
+2022-12-15 13:53:55,138:INFO:               scipy: 1.8.1
+2022-12-15 13:53:55,138:INFO:              joblib: 1.2.0
+2022-12-15 13:53:55,139:INFO:             sklearn: 1.1.3
+2022-12-15 13:53:55,139:INFO:                pyod: 1.0.6
+2022-12-15 13:53:55,139:INFO:            imblearn: 0.9.1
+2022-12-15 13:53:55,139:INFO:   category_encoders: 2.5.1.post0
+2022-12-15 13:53:55,139:INFO:            lightgbm: 3.3.3
+2022-12-15 13:53:55,140:INFO:               numba: 0.55.2
+2022-12-15 13:53:55,140:INFO:            requests: 2.28.1
+2022-12-15 13:53:55,140:INFO:          matplotlib: 3.6.2
+2022-12-15 13:53:55,140:INFO:          scikitplot: 0.3.7
+2022-12-15 13:53:55,140:INFO:         yellowbrick: 1.5
+2022-12-15 13:53:55,140:INFO:              plotly: 5.11.0
+2022-12-15 13:53:55,140:INFO:             kaleido: 0.2.1
+2022-12-15 13:53:55,140:INFO:         statsmodels: 0.13.5
+2022-12-15 13:53:55,140:INFO:              sktime: 0.13.4
+2022-12-15 13:53:55,141:INFO:               tbats: 1.1.2
+2022-12-15 13:53:55,141:INFO:            pmdarima: 1.8.5
+2022-12-15 13:53:55,141:INFO:              psutil: 5.9.0
+2022-12-15 13:53:55,141:INFO:PyCaret optional dependencies:
+2022-12-15 13:53:55,141:INFO:                shap: Not installed
+2022-12-15 13:53:55,141:INFO:           interpret: Not installed
+2022-12-15 13:53:55,142:INFO:                umap: Not installed
+2022-12-15 13:53:55,142:INFO:    pandas_profiling: Not installed
+2022-12-15 13:53:55,142:INFO:  explainerdashboard: Not installed
+2022-12-15 13:53:55,142:INFO:             autoviz: Not installed
+2022-12-15 13:53:55,142:INFO:           fairlearn: Not installed
+2022-12-15 13:53:55,142:INFO:             xgboost: Not installed
+2022-12-15 13:53:55,142:INFO:            catboost: Not installed
+2022-12-15 13:53:55,142:INFO:              kmodes: Not installed
+2022-12-15 13:53:55,142:INFO:             mlxtend: Not installed
+2022-12-15 13:53:55,143:INFO:       statsforecast: Not installed
+2022-12-15 13:53:55,143:INFO:        tune_sklearn: Not installed
+2022-12-15 13:53:55,143:INFO:                 ray: Not installed
+2022-12-15 13:53:55,143:INFO:            hyperopt: Not installed
+2022-12-15 13:53:55,143:INFO:              optuna: Not installed
+2022-12-15 13:53:55,143:INFO:               skopt: Not installed
+2022-12-15 13:53:55,143:INFO:              mlflow: Not installed
+2022-12-15 13:53:55,144:INFO:              gradio: Not installed
+2022-12-15 13:53:55,144:INFO:             fastapi: Not installed
+2022-12-15 13:53:55,144:INFO:             uvicorn: Not installed
+2022-12-15 13:53:55,144:INFO:              m2cgen: Not installed
+2022-12-15 13:53:55,144:INFO:           evidently: Not installed
+2022-12-15 13:53:55,144:INFO:                nltk: Not installed
+2022-12-15 13:53:55,144:INFO:            pyLDAvis: Not installed
+2022-12-15 13:53:55,144:INFO:              gensim: Not installed
+2022-12-15 13:53:55,144:INFO:               spacy: Not installed
+2022-12-15 13:53:55,145:INFO:           wordcloud: Not installed
+2022-12-15 13:53:55,145:INFO:            textblob: Not installed
+2022-12-15 13:53:55,145:INFO:               fugue: Not installed
+2022-12-15 13:53:55,145:INFO:           streamlit: Not installed
+2022-12-15 13:53:55,145:INFO:             prophet: Not installed
+2022-12-15 13:53:55,145:INFO:None
+2022-12-15 13:53:55,145:INFO:Set up data.
+2022-12-15 13:53:55,636:INFO:Set up train/test split.
+2022-12-15 13:53:55,792:INFO:Set up index.
+2022-12-15 13:53:55,799:INFO:Assigning column types.
+2022-12-15 13:53:55,816:INFO:Set up folding strategy.
+2022-12-15 13:53:55,816:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2022-12-15 13:53:55,958:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 13:53:55,960:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 13:53:56,048:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 13:58:12,023:INFO:PyCaret ClassificationExperiment
+2022-12-15 13:58:12,023:INFO:Logging name: olympics
+2022-12-15 13:58:12,024:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-12-15 13:58:12,024:INFO:version 3.0.0.rc4
+2022-12-15 13:58:12,024:INFO:Initializing setup()
+2022-12-15 13:58:12,024:INFO:self.USI: e760
+2022-12-15 13:58:12,024:INFO:self.variable_keys: {'memory', '_gpu_n_jobs_param', '_available_plots', 'html_param', 'y_test', 'master_model_container', 'fix_imbalance', 'log_plots_param', 'logging_param', 'fold_shuffle_param', 'seed', 'data', 'exp_id', 'idx', 'display_container', '_ml_usecase', 'X_train', '_all_metrics', 'n_jobs_param', 'fold_groups_param', '_is_multiclass', 'fold_generator', 'variable_keys', 'X', 'target_param', 'pipeline', 'X_test', 'y', 'y_train', '_all_models_internal', '_all_models', 'gpu_param', 'USI', 'exp_name_log'}
+2022-12-15 13:58:12,025:INFO:Checking environment
+2022-12-15 13:58:12,025:INFO:python_version: 3.10.8
+2022-12-15 13:58:12,025:INFO:python_build: ('main', 'Nov 24 2022 08:09:04')
+2022-12-15 13:58:12,026:INFO:machine: x86_64
+2022-12-15 13:58:12,026:INFO:platform: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 13:58:12,026:INFO:Memory: svmem(total=17179869184, available=6961942528, percent=59.5, used=10055327744, free=408928256, active=6561591296, inactive=6440824832, wired=3493736448)
+2022-12-15 13:58:12,026:INFO:Physical Core: 2
+2022-12-15 13:58:12,026:INFO:Logical Core: 4
+2022-12-15 13:58:12,026:INFO:Checking libraries
+2022-12-15 13:58:12,027:INFO:System:
+2022-12-15 13:58:12,027:INFO:    python: 3.10.8 (main, Nov 24 2022, 08:09:04) [Clang 14.0.6 ]
+2022-12-15 13:58:12,027:INFO:executable: /Users/rajendravrk/opt/anaconda3/envs/MLG/bin/python
+2022-12-15 13:58:12,027:INFO:   machine: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 13:58:12,028:INFO:PyCaret required dependencies:
+2022-12-15 13:58:12,029:INFO:                 pip: 22.2.2
+2022-12-15 13:58:12,029:INFO:          setuptools: 65.5.0
+2022-12-15 13:58:12,029:INFO:             pycaret: 3.0.0rc4
+2022-12-15 13:58:12,029:INFO:             IPython: 8.6.0
+2022-12-15 13:58:12,030:INFO:          ipywidgets: 8.0.3
+2022-12-15 13:58:12,030:INFO:                tqdm: 4.64.1
+2022-12-15 13:58:12,030:INFO:               numpy: 1.22.3
+2022-12-15 13:58:12,030:INFO:              pandas: 1.4.2
+2022-12-15 13:58:12,030:INFO:              jinja2: 3.1.2
+2022-12-15 13:58:12,030:INFO:               scipy: 1.8.1
+2022-12-15 13:58:12,030:INFO:              joblib: 1.2.0
+2022-12-15 13:58:12,030:INFO:             sklearn: 1.1.3
+2022-12-15 13:58:12,031:INFO:                pyod: 1.0.6
+2022-12-15 13:58:12,031:INFO:            imblearn: 0.9.1
+2022-12-15 13:58:12,031:INFO:   category_encoders: 2.5.1.post0
+2022-12-15 13:58:12,031:INFO:            lightgbm: 3.3.3
+2022-12-15 13:58:12,031:INFO:               numba: 0.55.2
+2022-12-15 13:58:12,031:INFO:            requests: 2.28.1
+2022-12-15 13:58:12,031:INFO:          matplotlib: 3.6.2
+2022-12-15 13:58:12,031:INFO:          scikitplot: 0.3.7
+2022-12-15 13:58:12,031:INFO:         yellowbrick: 1.5
+2022-12-15 13:58:12,032:INFO:              plotly: 5.11.0
+2022-12-15 13:58:12,032:INFO:             kaleido: 0.2.1
+2022-12-15 13:58:12,032:INFO:         statsmodels: 0.13.5
+2022-12-15 13:58:12,032:INFO:              sktime: 0.13.4
+2022-12-15 13:58:12,032:INFO:               tbats: 1.1.2
+2022-12-15 13:58:12,032:INFO:            pmdarima: 1.8.5
+2022-12-15 13:58:12,032:INFO:              psutil: 5.9.0
+2022-12-15 13:58:12,032:INFO:PyCaret optional dependencies:
+2022-12-15 13:58:12,032:INFO:                shap: Not installed
+2022-12-15 13:58:12,033:INFO:           interpret: Not installed
+2022-12-15 13:58:12,033:INFO:                umap: Not installed
+2022-12-15 13:58:12,033:INFO:    pandas_profiling: Not installed
+2022-12-15 13:58:12,033:INFO:  explainerdashboard: Not installed
+2022-12-15 13:58:12,033:INFO:             autoviz: Not installed
+2022-12-15 13:58:12,033:INFO:           fairlearn: Not installed
+2022-12-15 13:58:12,033:INFO:             xgboost: Not installed
+2022-12-15 13:58:12,033:INFO:            catboost: Not installed
+2022-12-15 13:58:12,033:INFO:              kmodes: Not installed
+2022-12-15 13:58:12,034:INFO:             mlxtend: Not installed
+2022-12-15 13:58:12,034:INFO:       statsforecast: Not installed
+2022-12-15 13:58:12,034:INFO:        tune_sklearn: Not installed
+2022-12-15 13:58:12,034:INFO:                 ray: Not installed
+2022-12-15 13:58:12,034:INFO:            hyperopt: Not installed
+2022-12-15 13:58:12,034:INFO:              optuna: Not installed
+2022-12-15 13:58:12,034:INFO:               skopt: Not installed
+2022-12-15 13:58:12,034:INFO:              mlflow: Not installed
+2022-12-15 13:58:12,034:INFO:              gradio: Not installed
+2022-12-15 13:58:12,034:INFO:             fastapi: Not installed
+2022-12-15 13:58:12,035:INFO:             uvicorn: Not installed
+2022-12-15 13:58:12,035:INFO:              m2cgen: Not installed
+2022-12-15 13:58:12,035:INFO:           evidently: Not installed
+2022-12-15 13:58:12,035:INFO:                nltk: Not installed
+2022-12-15 13:58:12,035:INFO:            pyLDAvis: Not installed
+2022-12-15 13:58:12,035:INFO:              gensim: Not installed
+2022-12-15 13:58:12,035:INFO:               spacy: Not installed
+2022-12-15 13:58:12,035:INFO:           wordcloud: Not installed
+2022-12-15 13:58:12,035:INFO:            textblob: Not installed
+2022-12-15 13:58:12,035:INFO:               fugue: Not installed
+2022-12-15 13:58:12,036:INFO:           streamlit: Not installed
+2022-12-15 13:58:12,036:INFO:             prophet: Not installed
+2022-12-15 13:58:12,036:INFO:None
+2022-12-15 13:58:12,036:INFO:Set up data.
+2022-12-15 13:58:12,519:INFO:Set up train/test split.
+2022-12-15 13:58:12,724:INFO:Set up index.
+2022-12-15 13:58:12,730:INFO:Assigning column types.
+2022-12-15 13:58:12,747:INFO:Set up folding strategy.
+2022-12-15 13:58:12,748:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2022-12-15 13:58:12,932:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 13:58:12,935:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 13:58:13,035:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:10:46,325:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 14:10:46,326:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 14:10:46,326:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 14:10:46,326:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 14:10:51,345:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-12-15 14:11:45,113:WARNING:/var/folders/05/vw9063r52vx14py3g67c010r0000gn/T/ipykernel_72709/1557052211.py:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  cleaned_df['status'] =cleaned_df['Medal'].apply(lambda x: 0 if x==0  else 1)
+
+2022-12-15 14:12:05,746:INFO:PyCaret ClassificationExperiment
+2022-12-15 14:12:05,746:INFO:Logging name: olympics
+2022-12-15 14:12:05,746:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-12-15 14:12:05,746:INFO:version 3.0.0.rc4
+2022-12-15 14:12:05,747:INFO:Initializing setup()
+2022-12-15 14:12:05,747:INFO:self.USI: 310b
+2022-12-15 14:12:05,747:INFO:self.variable_keys: {'display_container', 'gpu_param', '_is_multiclass', 'logging_param', 'idx', '_ml_usecase', '_all_metrics', 'master_model_container', 'fold_generator', 'y_train', 'memory', '_all_models', 'pipeline', 'target_param', 'variable_keys', 'log_plots_param', 'fix_imbalance', 'y_test', 'seed', 'html_param', '_gpu_n_jobs_param', 'X_train', 'X_test', 'X', 'exp_name_log', '_all_models_internal', 'fold_shuffle_param', 'y', 'fold_groups_param', 'data', 'USI', 'exp_id', 'n_jobs_param', '_available_plots'}
+2022-12-15 14:12:05,747:INFO:Checking environment
+2022-12-15 14:12:05,747:INFO:python_version: 3.10.8
+2022-12-15 14:12:05,747:INFO:python_build: ('main', 'Nov 24 2022 08:09:04')
+2022-12-15 14:12:05,747:INFO:machine: x86_64
+2022-12-15 14:12:05,747:INFO:platform: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 14:12:05,747:INFO:Memory: svmem(total=17179869184, available=6642987008, percent=61.3, used=10197250048, free=119287808, active=6525550592, inactive=6517514240, wired=3671699456)
+2022-12-15 14:12:05,747:INFO:Physical Core: 2
+2022-12-15 14:12:05,747:INFO:Logical Core: 4
+2022-12-15 14:12:05,747:INFO:Checking libraries
+2022-12-15 14:12:05,748:INFO:System:
+2022-12-15 14:12:05,748:INFO:    python: 3.10.8 (main, Nov 24 2022, 08:09:04) [Clang 14.0.6 ]
+2022-12-15 14:12:05,748:INFO:executable: /Users/rajendravrk/opt/anaconda3/envs/MLG/bin/python
+2022-12-15 14:12:05,748:INFO:   machine: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 14:12:05,748:INFO:PyCaret required dependencies:
+2022-12-15 14:12:05,748:INFO:                 pip: 22.2.2
+2022-12-15 14:12:05,748:INFO:          setuptools: 65.5.0
+2022-12-15 14:12:05,748:INFO:             pycaret: 3.0.0rc4
+2022-12-15 14:12:05,748:INFO:             IPython: 8.6.0
+2022-12-15 14:12:05,748:INFO:          ipywidgets: 8.0.3
+2022-12-15 14:12:05,748:INFO:                tqdm: 4.64.1
+2022-12-15 14:12:05,748:INFO:               numpy: 1.22.3
+2022-12-15 14:12:05,748:INFO:              pandas: 1.4.2
+2022-12-15 14:12:05,748:INFO:              jinja2: 3.1.2
+2022-12-15 14:12:05,748:INFO:               scipy: 1.8.1
+2022-12-15 14:12:05,749:INFO:              joblib: 1.2.0
+2022-12-15 14:12:05,749:INFO:             sklearn: 1.1.3
+2022-12-15 14:12:05,749:INFO:                pyod: 1.0.6
+2022-12-15 14:12:05,749:INFO:            imblearn: 0.9.1
+2022-12-15 14:12:05,749:INFO:   category_encoders: 2.5.1.post0
+2022-12-15 14:12:05,749:INFO:            lightgbm: 3.2.1
+2022-12-15 14:12:05,749:INFO:               numba: 0.55.2
+2022-12-15 14:12:05,749:INFO:            requests: 2.28.1
+2022-12-15 14:12:05,749:INFO:          matplotlib: 3.6.2
+2022-12-15 14:12:05,750:INFO:          scikitplot: 0.3.7
+2022-12-15 14:12:05,750:INFO:         yellowbrick: 1.5
+2022-12-15 14:12:05,750:INFO:              plotly: 5.11.0
+2022-12-15 14:12:05,750:INFO:             kaleido: 0.2.1
+2022-12-15 14:12:05,750:INFO:         statsmodels: 0.13.5
+2022-12-15 14:12:05,750:INFO:              sktime: 0.13.4
+2022-12-15 14:12:05,750:INFO:               tbats: 1.1.2
+2022-12-15 14:12:05,750:INFO:            pmdarima: 1.8.5
+2022-12-15 14:12:05,750:INFO:              psutil: 5.9.0
+2022-12-15 14:12:05,750:INFO:PyCaret optional dependencies:
+2022-12-15 14:12:05,776:INFO:                shap: 0.41.0
+2022-12-15 14:12:05,776:INFO:           interpret: 0.3.0
+2022-12-15 14:12:05,776:INFO:                umap: Not installed
+2022-12-15 14:12:05,776:INFO:    pandas_profiling: Not installed
+2022-12-15 14:12:05,776:INFO:  explainerdashboard: Not installed
+2022-12-15 14:12:05,776:INFO:             autoviz: Not installed
+2022-12-15 14:12:05,776:INFO:           fairlearn: Not installed
+2022-12-15 14:12:05,790:INFO:             xgboost: Not installed
+2022-12-15 14:12:05,790:INFO:            catboost: Not installed
+2022-12-15 14:12:05,790:INFO:              kmodes: Not installed
+2022-12-15 14:12:05,791:INFO:             mlxtend: Not installed
+2022-12-15 14:12:05,791:INFO:       statsforecast: Not installed
+2022-12-15 14:12:05,791:INFO:        tune_sklearn: Not installed
+2022-12-15 14:12:05,791:INFO:                 ray: Not installed
+2022-12-15 14:12:05,792:INFO:            hyperopt: Not installed
+2022-12-15 14:12:05,792:INFO:              optuna: Not installed
+2022-12-15 14:12:05,792:INFO:               skopt: Not installed
+2022-12-15 14:12:05,792:INFO:              mlflow: Not installed
+2022-12-15 14:12:05,793:INFO:              gradio: Not installed
+2022-12-15 14:12:05,793:INFO:             fastapi: Not installed
+2022-12-15 14:12:05,793:INFO:             uvicorn: Not installed
+2022-12-15 14:12:05,793:INFO:              m2cgen: Not installed
+2022-12-15 14:12:05,793:INFO:           evidently: Not installed
+2022-12-15 14:12:05,793:INFO:                nltk: Not installed
+2022-12-15 14:12:05,793:INFO:            pyLDAvis: Not installed
+2022-12-15 14:12:05,794:INFO:              gensim: Not installed
+2022-12-15 14:12:05,794:INFO:               spacy: Not installed
+2022-12-15 14:12:05,794:INFO:           wordcloud: Not installed
+2022-12-15 14:12:05,794:INFO:            textblob: Not installed
+2022-12-15 14:12:05,794:INFO:               fugue: Not installed
+2022-12-15 14:12:05,795:INFO:           streamlit: Not installed
+2022-12-15 14:12:05,795:INFO:             prophet: Not installed
+2022-12-15 14:12:05,795:INFO:None
+2022-12-15 14:12:05,795:INFO:Set up data.
+2022-12-15 14:12:05,909:INFO:Set up train/test split.
+2022-12-15 14:12:05,982:INFO:Set up index.
+2022-12-15 14:12:05,986:INFO:Assigning column types.
+2022-12-15 14:12:05,998:INFO:Set up folding strategy.
+2022-12-15 14:12:05,998:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2022-12-15 14:12:06,170:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 14:12:06,177:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 14:12:06,313:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:12:06,752:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:12:06,966:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 14:12:06,969:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 14:12:07,074:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:12:07,075:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:12:07,075:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2022-12-15 14:12:07,262:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 14:12:07,384:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:12:07,385:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:12:07,555:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 14:12:07,659:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:12:07,660:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:12:07,661:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2022-12-15 14:12:07,935:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:12:07,937:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:12:08,289:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:12:08,290:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:12:08,294:INFO:Preparing preprocessing pipeline...
+2022-12-15 14:12:08,298:INFO:Set up label encoding.
+2022-12-15 14:12:08,299:INFO:Set up simple imputation.
+2022-12-15 14:12:08,300:INFO:Set up grouping of rare categories.
+2022-12-15 14:18:47,307:WARNING:/var/folders/05/vw9063r52vx14py3g67c010r0000gn/T/ipykernel_73066/1557052211.py:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  cleaned_df['status'] =cleaned_df['Medal'].apply(lambda x: 0 if x==0  else 1)
+
+2022-12-15 14:18:50,084:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 14:18:50,085:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 14:18:50,085:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 14:18:50,085:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 14:18:54,054:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-12-15 14:18:54,453:INFO:PyCaret ClassificationExperiment
+2022-12-15 14:18:54,453:INFO:Logging name: olympics
+2022-12-15 14:18:54,453:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-12-15 14:18:54,453:INFO:version 3.0.0.rc4
+2022-12-15 14:18:54,453:INFO:Initializing setup()
+2022-12-15 14:18:54,453:INFO:self.USI: 3ad4
+2022-12-15 14:18:54,453:INFO:self.variable_keys: {'fold_groups_param', 'memory', 'y_train', 'gpu_param', 'display_container', '_all_models_internal', 'fold_generator', 'log_plots_param', 'target_param', '_is_multiclass', '_all_models', 'idx', 'n_jobs_param', 'master_model_container', 'X_test', 'fold_shuffle_param', 'USI', 'y', 'data', '_gpu_n_jobs_param', 'pipeline', 'exp_id', '_all_metrics', '_ml_usecase', 'variable_keys', 'y_test', 'seed', 'logging_param', 'fix_imbalance', '_available_plots', 'html_param', 'exp_name_log', 'X', 'X_train'}
+2022-12-15 14:18:54,453:INFO:Checking environment
+2022-12-15 14:18:54,453:INFO:python_version: 3.10.8
+2022-12-15 14:18:54,453:INFO:python_build: ('main', 'Nov 24 2022 08:09:04')
+2022-12-15 14:18:54,453:INFO:machine: x86_64
+2022-12-15 14:18:54,453:INFO:platform: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 14:18:54,454:INFO:Memory: svmem(total=17179869184, available=6764097536, percent=60.6, used=10025144320, free=329609216, active=6420406272, inactive=6273118208, wired=3604738048)
+2022-12-15 14:18:54,454:INFO:Physical Core: 2
+2022-12-15 14:18:54,454:INFO:Logical Core: 4
+2022-12-15 14:18:54,454:INFO:Checking libraries
+2022-12-15 14:18:54,454:INFO:System:
+2022-12-15 14:18:54,454:INFO:    python: 3.10.8 (main, Nov 24 2022, 08:09:04) [Clang 14.0.6 ]
+2022-12-15 14:18:54,454:INFO:executable: /Users/rajendravrk/opt/anaconda3/envs/MLG/bin/python
+2022-12-15 14:18:54,454:INFO:   machine: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 14:18:54,454:INFO:PyCaret required dependencies:
+2022-12-15 14:18:54,455:INFO:                 pip: 22.2.2
+2022-12-15 14:18:54,455:INFO:          setuptools: 65.5.0
+2022-12-15 14:18:54,455:INFO:             pycaret: 3.0.0rc4
+2022-12-15 14:18:54,455:INFO:             IPython: 8.6.0
+2022-12-15 14:18:54,455:INFO:          ipywidgets: 8.0.3
+2022-12-15 14:18:54,455:INFO:                tqdm: 4.64.1
+2022-12-15 14:18:54,455:INFO:               numpy: 1.22.3
+2022-12-15 14:18:54,455:INFO:              pandas: 1.4.2
+2022-12-15 14:18:54,455:INFO:              jinja2: 3.1.2
+2022-12-15 14:18:54,455:INFO:               scipy: 1.8.1
+2022-12-15 14:18:54,456:INFO:              joblib: 1.2.0
+2022-12-15 14:18:54,456:INFO:             sklearn: 1.1.3
+2022-12-15 14:18:54,456:INFO:                pyod: 1.0.6
+2022-12-15 14:18:54,456:INFO:            imblearn: 0.9.1
+2022-12-15 14:18:54,456:INFO:   category_encoders: 2.5.1.post0
+2022-12-15 14:18:54,456:INFO:            lightgbm: 3.2.1
+2022-12-15 14:18:54,456:INFO:               numba: 0.55.2
+2022-12-15 14:18:54,456:INFO:            requests: 2.28.1
+2022-12-15 14:18:54,456:INFO:          matplotlib: 3.6.2
+2022-12-15 14:18:54,456:INFO:          scikitplot: 0.3.7
+2022-12-15 14:18:54,456:INFO:         yellowbrick: 1.5
+2022-12-15 14:18:54,456:INFO:              plotly: 5.11.0
+2022-12-15 14:18:54,456:INFO:             kaleido: 0.2.1
+2022-12-15 14:18:54,456:INFO:         statsmodels: 0.13.5
+2022-12-15 14:18:54,457:INFO:              sktime: 0.13.4
+2022-12-15 14:18:54,457:INFO:               tbats: 1.1.2
+2022-12-15 14:18:54,457:INFO:            pmdarima: 1.8.5
+2022-12-15 14:18:54,457:INFO:              psutil: 5.9.0
+2022-12-15 14:18:54,457:INFO:PyCaret optional dependencies:
+2022-12-15 14:18:54,467:INFO:                shap: 0.41.0
+2022-12-15 14:18:54,468:INFO:           interpret: 0.3.0
+2022-12-15 14:18:54,468:INFO:                umap: Not installed
+2022-12-15 14:18:54,468:INFO:    pandas_profiling: Not installed
+2022-12-15 14:18:54,468:INFO:  explainerdashboard: Not installed
+2022-12-15 14:18:54,468:INFO:             autoviz: Not installed
+2022-12-15 14:18:54,468:INFO:           fairlearn: Not installed
+2022-12-15 14:18:54,468:INFO:             xgboost: Not installed
+2022-12-15 14:18:54,468:INFO:            catboost: Not installed
+2022-12-15 14:18:54,468:INFO:              kmodes: Not installed
+2022-12-15 14:18:54,468:INFO:             mlxtend: Not installed
+2022-12-15 14:18:54,468:INFO:       statsforecast: Not installed
+2022-12-15 14:18:54,468:INFO:        tune_sklearn: Not installed
+2022-12-15 14:18:54,468:INFO:                 ray: Not installed
+2022-12-15 14:18:54,469:INFO:            hyperopt: Not installed
+2022-12-15 14:18:54,469:INFO:              optuna: Not installed
+2022-12-15 14:18:54,469:INFO:               skopt: Not installed
+2022-12-15 14:18:54,469:INFO:              mlflow: Not installed
+2022-12-15 14:18:54,469:INFO:              gradio: Not installed
+2022-12-15 14:18:54,469:INFO:             fastapi: Not installed
+2022-12-15 14:18:54,469:INFO:             uvicorn: Not installed
+2022-12-15 14:18:54,469:INFO:              m2cgen: Not installed
+2022-12-15 14:18:54,469:INFO:           evidently: Not installed
+2022-12-15 14:18:54,469:INFO:                nltk: Not installed
+2022-12-15 14:18:54,469:INFO:            pyLDAvis: Not installed
+2022-12-15 14:18:54,469:INFO:              gensim: Not installed
+2022-12-15 14:18:54,469:INFO:               spacy: Not installed
+2022-12-15 14:18:54,470:INFO:           wordcloud: Not installed
+2022-12-15 14:18:54,470:INFO:            textblob: Not installed
+2022-12-15 14:18:54,470:INFO:               fugue: Not installed
+2022-12-15 14:18:54,470:INFO:           streamlit: Not installed
+2022-12-15 14:18:54,470:INFO:             prophet: Not installed
+2022-12-15 14:18:54,470:INFO:None
+2022-12-15 14:18:54,470:INFO:Set up data.
+2022-12-15 14:18:55,037:INFO:Set up train/test split.
+2022-12-15 14:18:55,257:INFO:Set up index.
+2022-12-15 14:18:55,265:INFO:Assigning column types.
+2022-12-15 14:18:55,289:INFO:Set up folding strategy.
+2022-12-15 14:18:55,290:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2022-12-15 14:18:55,456:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 14:18:55,459:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 14:18:55,576:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:18:55,607:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:18:55,798:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 14:18:55,801:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 14:18:55,887:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:18:55,888:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:18:55,890:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2022-12-15 14:18:56,087:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 14:18:56,175:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:18:56,176:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:18:56,321:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 14:18:56,405:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:18:56,406:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:18:56,407:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2022-12-15 14:18:56,726:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:18:56,745:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:18:56,969:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:18:56,970:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:18:56,971:INFO:Preparing preprocessing pipeline...
+2022-12-15 14:18:56,976:INFO:Set up simple imputation.
+2022-12-15 14:18:56,976:INFO:Set up grouping of rare categories.
+2022-12-15 14:59:12,707:INFO:PyCaret ClassificationExperiment
+2022-12-15 14:59:12,753:INFO:Logging name: olympics
+2022-12-15 14:59:12,753:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-12-15 14:59:12,753:INFO:version 3.0.0.rc4
+2022-12-15 14:59:12,753:INFO:Initializing setup()
+2022-12-15 14:59:12,753:INFO:self.USI: cb03
+2022-12-15 14:59:12,753:INFO:self.variable_keys: {'fold_groups_param', 'memory', 'y_train', 'gpu_param', 'display_container', '_all_models_internal', 'fold_generator', 'log_plots_param', 'target_param', '_is_multiclass', '_all_models', 'idx', 'n_jobs_param', 'master_model_container', 'X_test', 'fold_shuffle_param', 'USI', 'y', 'data', '_gpu_n_jobs_param', 'pipeline', 'exp_id', '_all_metrics', '_ml_usecase', 'variable_keys', 'y_test', 'seed', 'logging_param', 'fix_imbalance', '_available_plots', 'html_param', 'exp_name_log', 'X', 'X_train'}
+2022-12-15 14:59:12,754:INFO:Checking environment
+2022-12-15 14:59:12,754:INFO:python_version: 3.10.8
+2022-12-15 14:59:12,754:INFO:python_build: ('main', 'Nov 24 2022 08:09:04')
+2022-12-15 14:59:12,754:INFO:machine: x86_64
+2022-12-15 14:59:12,754:INFO:platform: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 14:59:12,754:INFO:Memory: svmem(total=17179869184, available=6599700480, percent=61.6, used=9714434048, free=413323264, active=6193930240, inactive=6119583744, wired=3520503808)
+2022-12-15 14:59:12,754:INFO:Physical Core: 2
+2022-12-15 14:59:12,754:INFO:Logical Core: 4
+2022-12-15 14:59:12,754:INFO:Checking libraries
+2022-12-15 14:59:12,754:INFO:System:
+2022-12-15 14:59:12,754:INFO:    python: 3.10.8 (main, Nov 24 2022, 08:09:04) [Clang 14.0.6 ]
+2022-12-15 14:59:12,755:INFO:executable: /Users/rajendravrk/opt/anaconda3/envs/MLG/bin/python
+2022-12-15 14:59:12,755:INFO:   machine: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 14:59:12,755:INFO:PyCaret required dependencies:
+2022-12-15 14:59:12,755:INFO:                 pip: 22.2.2
+2022-12-15 14:59:12,755:INFO:          setuptools: 65.5.0
+2022-12-15 14:59:12,755:INFO:             pycaret: 3.0.0rc4
+2022-12-15 14:59:12,755:INFO:             IPython: 8.6.0
+2022-12-15 14:59:12,755:INFO:          ipywidgets: 8.0.3
+2022-12-15 14:59:12,755:INFO:                tqdm: 4.64.1
+2022-12-15 14:59:12,755:INFO:               numpy: 1.22.3
+2022-12-15 14:59:12,755:INFO:              pandas: 1.4.2
+2022-12-15 14:59:12,755:INFO:              jinja2: 3.1.2
+2022-12-15 14:59:12,755:INFO:               scipy: 1.8.1
+2022-12-15 14:59:12,755:INFO:              joblib: 1.2.0
+2022-12-15 14:59:12,755:INFO:             sklearn: 1.1.3
+2022-12-15 14:59:12,756:INFO:                pyod: 1.0.6
+2022-12-15 14:59:12,756:INFO:            imblearn: 0.9.1
+2022-12-15 14:59:12,756:INFO:   category_encoders: 2.5.1.post0
+2022-12-15 14:59:12,756:INFO:            lightgbm: 3.2.1
+2022-12-15 14:59:12,756:INFO:               numba: 0.55.2
+2022-12-15 14:59:12,756:INFO:            requests: 2.28.1
+2022-12-15 14:59:12,756:INFO:          matplotlib: 3.6.2
+2022-12-15 14:59:12,756:INFO:          scikitplot: 0.3.7
+2022-12-15 14:59:12,756:INFO:         yellowbrick: 1.5
+2022-12-15 14:59:12,756:INFO:              plotly: 5.11.0
+2022-12-15 14:59:12,756:INFO:             kaleido: 0.2.1
+2022-12-15 14:59:12,756:INFO:         statsmodels: 0.13.5
+2022-12-15 14:59:12,756:INFO:              sktime: 0.13.4
+2022-12-15 14:59:12,756:INFO:               tbats: 1.1.2
+2022-12-15 14:59:12,756:INFO:            pmdarima: 1.8.5
+2022-12-15 14:59:12,757:INFO:              psutil: 5.9.0
+2022-12-15 14:59:12,757:INFO:PyCaret optional dependencies:
+2022-12-15 14:59:12,757:INFO:                shap: 0.41.0
+2022-12-15 14:59:12,757:INFO:           interpret: 0.3.0
+2022-12-15 14:59:12,757:INFO:                umap: Not installed
+2022-12-15 14:59:12,757:INFO:    pandas_profiling: Not installed
+2022-12-15 14:59:12,757:INFO:  explainerdashboard: Not installed
+2022-12-15 14:59:12,757:INFO:             autoviz: Not installed
+2022-12-15 14:59:12,757:INFO:           fairlearn: Not installed
+2022-12-15 14:59:12,757:INFO:             xgboost: Not installed
+2022-12-15 14:59:12,757:INFO:            catboost: Not installed
+2022-12-15 14:59:12,757:INFO:              kmodes: Not installed
+2022-12-15 14:59:12,757:INFO:             mlxtend: Not installed
+2022-12-15 14:59:12,757:INFO:       statsforecast: Not installed
+2022-12-15 14:59:12,757:INFO:        tune_sklearn: Not installed
+2022-12-15 14:59:12,757:INFO:                 ray: Not installed
+2022-12-15 14:59:12,758:INFO:            hyperopt: Not installed
+2022-12-15 14:59:12,758:INFO:              optuna: Not installed
+2022-12-15 14:59:12,758:INFO:               skopt: Not installed
+2022-12-15 14:59:12,758:INFO:              mlflow: Not installed
+2022-12-15 14:59:12,758:INFO:              gradio: Not installed
+2022-12-15 14:59:12,758:INFO:             fastapi: Not installed
+2022-12-15 14:59:12,758:INFO:             uvicorn: Not installed
+2022-12-15 14:59:12,758:INFO:              m2cgen: Not installed
+2022-12-15 14:59:12,758:INFO:           evidently: Not installed
+2022-12-15 14:59:12,758:INFO:                nltk: Not installed
+2022-12-15 14:59:12,758:INFO:            pyLDAvis: Not installed
+2022-12-15 14:59:12,758:INFO:              gensim: Not installed
+2022-12-15 14:59:12,758:INFO:               spacy: Not installed
+2022-12-15 14:59:12,758:INFO:           wordcloud: Not installed
+2022-12-15 14:59:12,758:INFO:            textblob: Not installed
+2022-12-15 14:59:12,758:INFO:               fugue: Not installed
+2022-12-15 14:59:12,758:INFO:           streamlit: Not installed
+2022-12-15 14:59:12,759:INFO:             prophet: Not installed
+2022-12-15 14:59:12,759:INFO:None
+2022-12-15 14:59:12,759:INFO:Set up data.
+2022-12-15 14:59:12,916:INFO:Set up train/test split.
+2022-12-15 14:59:13,040:INFO:Set up index.
+2022-12-15 14:59:13,047:INFO:Assigning column types.
+2022-12-15 14:59:13,067:INFO:Set up folding strategy.
+2022-12-15 14:59:13,067:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2022-12-15 14:59:13,218:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 14:59:13,221:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 14:59:13,315:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:59:13,315:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:59:13,484:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 14:59:13,486:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 14:59:13,577:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:59:13,577:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:59:13,578:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2022-12-15 14:59:13,754:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 14:59:13,861:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:59:13,861:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:59:14,021:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 14:59:14,143:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:59:14,144:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:59:14,145:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2022-12-15 14:59:14,392:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:59:14,395:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:59:14,616:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:59:14,617:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:59:14,630:INFO:Preparing preprocessing pipeline...
+2022-12-15 14:59:14,635:INFO:Set up simple imputation.
+2022-12-15 14:59:14,635:INFO:Set up grouping of rare categories.
+2022-12-15 14:59:23,036:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 14:59:23,103:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 14:59:24,996:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 14:59:25,022:INFO:Set up encoding of ordinal features.
+2022-12-15 14:59:25,037:INFO:Set up encoding of categorical features.
+2022-12-15 14:59:25,038:INFO:Set up variance threshold.
+2022-12-15 14:59:36,539:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 14:59:42,085:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 4.84s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 14:59:54,718:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 3.79s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:02:46,083:WARNING:/var/folders/05/vw9063r52vx14py3g67c010r0000gn/T/ipykernel_73066/3293319574.py:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  cleaned_df['Year'] = cleaned_df['Year'].astype(str)
+
+2022-12-15 15:04:03,661:INFO:PyCaret ClassificationExperiment
+2022-12-15 15:04:03,661:INFO:Logging name: olympics
+2022-12-15 15:04:03,661:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-12-15 15:04:03,661:INFO:version 3.0.0.rc4
+2022-12-15 15:04:03,662:INFO:Initializing setup()
+2022-12-15 15:04:03,662:INFO:self.USI: da93
+2022-12-15 15:04:03,662:INFO:self.variable_keys: {'fold_groups_param', 'memory', 'y_train', 'gpu_param', 'display_container', '_all_models_internal', 'fold_generator', 'log_plots_param', 'target_param', '_is_multiclass', '_all_models', 'idx', 'n_jobs_param', 'master_model_container', 'X_test', 'fold_shuffle_param', 'USI', 'y', 'data', '_gpu_n_jobs_param', 'pipeline', 'exp_id', '_all_metrics', '_ml_usecase', 'variable_keys', 'y_test', 'seed', 'logging_param', 'fix_imbalance', '_available_plots', 'html_param', 'exp_name_log', 'X', 'X_train'}
+2022-12-15 15:04:03,663:INFO:Checking environment
+2022-12-15 15:04:03,663:INFO:python_version: 3.10.8
+2022-12-15 15:04:03,663:INFO:python_build: ('main', 'Nov 24 2022 08:09:04')
+2022-12-15 15:04:03,663:INFO:machine: x86_64
+2022-12-15 15:04:03,664:INFO:platform: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 15:04:03,665:INFO:Memory: svmem(total=17179869184, available=8195416064, percent=52.3, used=8284995584, free=3124023296, active=4740333568, inactive=4888018944, wired=3544662016)
+2022-12-15 15:04:03,665:INFO:Physical Core: 2
+2022-12-15 15:04:03,665:INFO:Logical Core: 4
+2022-12-15 15:04:03,665:INFO:Checking libraries
+2022-12-15 15:04:03,665:INFO:System:
+2022-12-15 15:04:03,666:INFO:    python: 3.10.8 (main, Nov 24 2022, 08:09:04) [Clang 14.0.6 ]
+2022-12-15 15:04:03,666:INFO:executable: /Users/rajendravrk/opt/anaconda3/envs/MLG/bin/python
+2022-12-15 15:04:03,666:INFO:   machine: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 15:04:03,666:INFO:PyCaret required dependencies:
+2022-12-15 15:04:03,703:INFO:                 pip: 22.2.2
+2022-12-15 15:04:03,703:INFO:          setuptools: 65.5.0
+2022-12-15 15:04:03,703:INFO:             pycaret: 3.0.0rc4
+2022-12-15 15:04:03,703:INFO:             IPython: 8.6.0
+2022-12-15 15:04:03,703:INFO:          ipywidgets: 8.0.3
+2022-12-15 15:04:03,703:INFO:                tqdm: 4.64.1
+2022-12-15 15:04:03,703:INFO:               numpy: 1.22.3
+2022-12-15 15:04:03,703:INFO:              pandas: 1.4.2
+2022-12-15 15:04:03,704:INFO:              jinja2: 3.1.2
+2022-12-15 15:04:03,704:INFO:               scipy: 1.8.1
+2022-12-15 15:04:03,704:INFO:              joblib: 1.2.0
+2022-12-15 15:04:03,704:INFO:             sklearn: 1.1.3
+2022-12-15 15:04:03,704:INFO:                pyod: 1.0.6
+2022-12-15 15:04:03,704:INFO:            imblearn: 0.9.1
+2022-12-15 15:04:03,704:INFO:   category_encoders: 2.5.1.post0
+2022-12-15 15:04:03,704:INFO:            lightgbm: 3.2.1
+2022-12-15 15:04:03,704:INFO:               numba: 0.55.2
+2022-12-15 15:04:03,704:INFO:            requests: 2.28.1
+2022-12-15 15:04:03,704:INFO:          matplotlib: 3.6.2
+2022-12-15 15:04:03,704:INFO:          scikitplot: 0.3.7
+2022-12-15 15:04:03,704:INFO:         yellowbrick: 1.5
+2022-12-15 15:04:03,704:INFO:              plotly: 5.11.0
+2022-12-15 15:04:03,705:INFO:             kaleido: 0.2.1
+2022-12-15 15:04:03,705:INFO:         statsmodels: 0.13.5
+2022-12-15 15:04:03,705:INFO:              sktime: 0.13.4
+2022-12-15 15:04:03,705:INFO:               tbats: 1.1.2
+2022-12-15 15:04:03,705:INFO:            pmdarima: 1.8.5
+2022-12-15 15:04:03,705:INFO:              psutil: 5.9.0
+2022-12-15 15:04:03,705:INFO:PyCaret optional dependencies:
+2022-12-15 15:04:03,705:INFO:                shap: 0.41.0
+2022-12-15 15:04:03,705:INFO:           interpret: 0.3.0
+2022-12-15 15:04:03,705:INFO:                umap: Not installed
+2022-12-15 15:04:03,705:INFO:    pandas_profiling: Not installed
+2022-12-15 15:04:03,705:INFO:  explainerdashboard: Not installed
+2022-12-15 15:04:03,705:INFO:             autoviz: Not installed
+2022-12-15 15:04:03,706:INFO:           fairlearn: Not installed
+2022-12-15 15:04:03,706:INFO:             xgboost: Not installed
+2022-12-15 15:04:03,706:INFO:            catboost: Not installed
+2022-12-15 15:04:03,706:INFO:              kmodes: Not installed
+2022-12-15 15:04:03,706:INFO:             mlxtend: Not installed
+2022-12-15 15:04:03,706:INFO:       statsforecast: Not installed
+2022-12-15 15:04:03,706:INFO:        tune_sklearn: Not installed
+2022-12-15 15:04:03,706:INFO:                 ray: Not installed
+2022-12-15 15:04:03,706:INFO:            hyperopt: Not installed
+2022-12-15 15:04:03,706:INFO:              optuna: Not installed
+2022-12-15 15:04:03,706:INFO:               skopt: Not installed
+2022-12-15 15:04:03,706:INFO:              mlflow: Not installed
+2022-12-15 15:04:03,706:INFO:              gradio: Not installed
+2022-12-15 15:04:03,706:INFO:             fastapi: Not installed
+2022-12-15 15:04:03,706:INFO:             uvicorn: Not installed
+2022-12-15 15:04:03,706:INFO:              m2cgen: Not installed
+2022-12-15 15:04:03,707:INFO:           evidently: Not installed
+2022-12-15 15:04:03,707:INFO:                nltk: Not installed
+2022-12-15 15:04:03,707:INFO:            pyLDAvis: Not installed
+2022-12-15 15:04:03,707:INFO:              gensim: Not installed
+2022-12-15 15:04:03,707:INFO:               spacy: Not installed
+2022-12-15 15:04:03,707:INFO:           wordcloud: Not installed
+2022-12-15 15:04:03,707:INFO:            textblob: Not installed
+2022-12-15 15:04:03,707:INFO:               fugue: Not installed
+2022-12-15 15:04:03,707:INFO:           streamlit: Not installed
+2022-12-15 15:04:03,707:INFO:             prophet: Not installed
+2022-12-15 15:04:03,707:INFO:None
+2022-12-15 15:04:03,707:INFO:Set up data.
+2022-12-15 15:04:03,917:INFO:Set up train/test split.
+2022-12-15 15:04:04,006:INFO:Set up index.
+2022-12-15 15:04:04,011:INFO:Assigning column types.
+2022-12-15 15:04:04,023:INFO:Set up folding strategy.
+2022-12-15 15:04:04,023:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2022-12-15 15:04:04,160:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 15:04:04,162:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 15:04:04,245:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:04:04,246:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:04:04,386:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 15:04:04,388:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 15:04:04,472:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:04:04,472:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:04:04,473:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2022-12-15 15:04:04,620:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 15:04:04,717:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:04:04,718:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:04:04,860:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 15:04:04,940:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:04:04,940:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:04:04,941:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2022-12-15 15:04:05,163:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:04:05,164:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:04:05,449:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:04:05,450:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:04:05,451:INFO:Preparing preprocessing pipeline...
+2022-12-15 15:04:05,458:INFO:Set up simple imputation.
+2022-12-15 15:04:05,458:INFO:Set up grouping of rare categories.
+2022-12-15 15:04:16,829:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:04:17,059:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:04:20,291:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:04:20,321:INFO:Set up encoding of ordinal features.
+2022-12-15 15:04:20,333:INFO:Set up encoding of categorical features.
+2022-12-15 15:04:20,333:INFO:Set up variance threshold.
+2022-12-15 15:04:31,672:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:04:37,233:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 4.77s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:04:51,459:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 4.41s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:05:34,012:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 3.43s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:05:37,594:INFO:Finished creating preprocessing pipeline.
+2022-12-15 15:05:37,628:INFO:Pipeline: Pipeline(memory=Memory(location=/var/folders/05/vw9063r52vx14py3g67c010r0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Age', 'Height', 'Weight'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              missing_values=nan,
+                                                              strategy='mean',
+                                                              verbose='deprecated'))),
+                ('categorical_imputer',
+                 TransformerWr...
+                                    include=['Team', 'Year', 'City', 'Sport',
+                                             'Event'],
+                                    transformer=OneHotEncoder(cols=['Team',
+                                                                    'Year',
+                                                                    'City',
+                                                                    'Sport',
+                                                                    'Event'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=VarianceThreshold(threshold=0)))],
+         verbose=False)
+2022-12-15 15:05:37,628:INFO:Creating final display dataframe.
+2022-12-15 15:05:51,350:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:05:57,126:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:225: UserWarning: Persisting input arguments took 5.21s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(transformer, X, y)
+
+2022-12-15 15:06:11,346:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:225: UserWarning: Persisting input arguments took 4.59s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(transformer, X, y)
+
+2022-12-15 15:06:46,785:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:225: UserWarning: Persisting input arguments took 3.78s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(transformer, X, y)
+
+2022-12-15 15:07:08,237:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:225: UserWarning: Persisting input arguments took 1.70s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(transformer, X, y)
+
+2022-12-15 15:08:17,202:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:225: UserWarning: Persisting input arguments took 8.61s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(transformer, X, y)
+
+2022-12-15 15:08:42,279:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:08:44,824:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:225: UserWarning: Persisting input arguments took 2.28s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(transformer, X, y)
+
+2022-12-15 15:08:53,106:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:225: UserWarning: Persisting input arguments took 2.39s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(transformer, X, y)
+
+2022-12-15 15:09:11,108:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:225: UserWarning: Persisting input arguments took 2.04s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(transformer, X, y)
+
+2022-12-15 15:09:26,785:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:225: UserWarning: Persisting input arguments took 0.77s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(transformer, X, y)
+
+2022-12-15 15:10:52,820:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:225: UserWarning: Persisting input arguments took 1.67s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(transformer, X, y)
+
+2022-12-15 15:10:58,973:INFO:Setup display_container:                     Description            Value
+0                    Session id               13
+1                        Target           status
+2                   Target type           Binary
+3           Original data shape     (164932, 11)
+4        Transformed data shape    (164932, 896)
+5   Transformed train set shape    (115452, 896)
+6    Transformed test set shape     (49480, 896)
+7              Ordinal features                2
+8              Numeric features                3
+9          Categorical features                7
+10                   Preprocess             True
+11              Imputation type           simple
+12           Numeric imputation             mean
+13       Categorical imputation         constant
+14     Maximum one-hot encoding              600
+15              Encoding method             None
+16       Low variance threshold                0
+17               Fold Generator  StratifiedKFold
+18                  Fold Number               10
+19                     CPU Jobs               -1
+20                      Use GPU            False
+21               Log Experiment            False
+22              Experiment Name         olympics
+23                          USI             da93
+2022-12-15 15:10:59,397:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:10:59,397:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:10:59,820:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:10:59,821:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:10:59,942:INFO:setup() successfully completed in 416.28s...............
+2022-12-15 15:11:00,056:INFO:PyCaret ClassificationExperiment
+2022-12-15 15:11:00,057:INFO:Logging name: olympics
+2022-12-15 15:11:00,058:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-12-15 15:11:00,058:INFO:version 3.0.0.rc4
+2022-12-15 15:11:00,058:INFO:Initializing setup()
+2022-12-15 15:11:00,058:INFO:self.USI: adda
+2022-12-15 15:11:00,058:INFO:self.variable_keys: {'fold_groups_param', 'memory', 'y_train', 'gpu_param', 'display_container', '_all_models_internal', 'fold_generator', 'log_plots_param', 'target_param', '_is_multiclass', '_all_models', 'idx', 'n_jobs_param', 'master_model_container', 'X_test', 'fold_shuffle_param', 'USI', 'y', 'data', '_gpu_n_jobs_param', 'pipeline', 'exp_id', '_all_metrics', '_ml_usecase', 'variable_keys', 'y_test', 'seed', 'logging_param', 'fix_imbalance', '_available_plots', 'html_param', 'exp_name_log', 'X', 'X_train'}
+2022-12-15 15:11:00,059:INFO:Checking environment
+2022-12-15 15:11:00,059:INFO:python_version: 3.10.8
+2022-12-15 15:11:00,059:INFO:python_build: ('main', 'Nov 24 2022 08:09:04')
+2022-12-15 15:11:00,059:INFO:machine: x86_64
+2022-12-15 15:11:00,059:INFO:platform: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 15:11:00,059:INFO:Memory: svmem(total=17179869184, available=6969122816, percent=59.4, used=8563957760, free=1474793472, active=4866166784, inactive=5123657728, wired=3697790976)
+2022-12-15 15:11:00,059:INFO:Physical Core: 2
+2022-12-15 15:11:00,059:INFO:Logical Core: 4
+2022-12-15 15:11:00,059:INFO:Checking libraries
+2022-12-15 15:11:00,059:INFO:System:
+2022-12-15 15:11:00,060:INFO:    python: 3.10.8 (main, Nov 24 2022, 08:09:04) [Clang 14.0.6 ]
+2022-12-15 15:11:00,060:INFO:executable: /Users/rajendravrk/opt/anaconda3/envs/MLG/bin/python
+2022-12-15 15:11:00,060:INFO:   machine: macOS-10.15.7-x86_64-i386-64bit
+2022-12-15 15:11:00,060:INFO:PyCaret required dependencies:
+2022-12-15 15:11:00,060:INFO:                 pip: 22.2.2
+2022-12-15 15:11:00,060:INFO:          setuptools: 65.5.0
+2022-12-15 15:11:00,060:INFO:             pycaret: 3.0.0rc4
+2022-12-15 15:11:00,060:INFO:             IPython: 8.6.0
+2022-12-15 15:11:00,061:INFO:          ipywidgets: 8.0.3
+2022-12-15 15:11:00,061:INFO:                tqdm: 4.64.1
+2022-12-15 15:11:00,061:INFO:               numpy: 1.22.3
+2022-12-15 15:11:00,061:INFO:              pandas: 1.4.2
+2022-12-15 15:11:00,061:INFO:              jinja2: 3.1.2
+2022-12-15 15:11:00,061:INFO:               scipy: 1.8.1
+2022-12-15 15:11:00,061:INFO:              joblib: 1.2.0
+2022-12-15 15:11:00,061:INFO:             sklearn: 1.1.3
+2022-12-15 15:11:00,061:INFO:                pyod: 1.0.6
+2022-12-15 15:11:00,061:INFO:            imblearn: 0.9.1
+2022-12-15 15:11:00,061:INFO:   category_encoders: 2.5.1.post0
+2022-12-15 15:11:00,062:INFO:            lightgbm: 3.2.1
+2022-12-15 15:11:00,062:INFO:               numba: 0.55.2
+2022-12-15 15:11:00,062:INFO:            requests: 2.28.1
+2022-12-15 15:11:00,062:INFO:          matplotlib: 3.6.2
+2022-12-15 15:11:00,062:INFO:          scikitplot: 0.3.7
+2022-12-15 15:11:00,062:INFO:         yellowbrick: 1.5
+2022-12-15 15:11:00,062:INFO:              plotly: 5.11.0
+2022-12-15 15:11:00,062:INFO:             kaleido: 0.2.1
+2022-12-15 15:11:00,062:INFO:         statsmodels: 0.13.5
+2022-12-15 15:11:00,062:INFO:              sktime: 0.13.4
+2022-12-15 15:11:00,063:INFO:               tbats: 1.1.2
+2022-12-15 15:11:00,063:INFO:            pmdarima: 1.8.5
+2022-12-15 15:11:00,063:INFO:              psutil: 5.9.0
+2022-12-15 15:11:00,063:INFO:PyCaret optional dependencies:
+2022-12-15 15:11:00,066:INFO:                shap: 0.41.0
+2022-12-15 15:11:00,067:INFO:           interpret: 0.3.0
+2022-12-15 15:11:00,069:INFO:                umap: Not installed
+2022-12-15 15:11:00,069:INFO:    pandas_profiling: Not installed
+2022-12-15 15:11:00,069:INFO:  explainerdashboard: Not installed
+2022-12-15 15:11:00,069:INFO:             autoviz: Not installed
+2022-12-15 15:11:00,070:INFO:           fairlearn: Not installed
+2022-12-15 15:11:00,070:INFO:             xgboost: Not installed
+2022-12-15 15:11:00,070:INFO:            catboost: Not installed
+2022-12-15 15:11:00,070:INFO:              kmodes: Not installed
+2022-12-15 15:11:00,070:INFO:             mlxtend: Not installed
+2022-12-15 15:11:00,070:INFO:       statsforecast: Not installed
+2022-12-15 15:11:00,071:INFO:        tune_sklearn: Not installed
+2022-12-15 15:11:00,071:INFO:                 ray: Not installed
+2022-12-15 15:11:00,072:INFO:            hyperopt: Not installed
+2022-12-15 15:11:00,072:INFO:              optuna: Not installed
+2022-12-15 15:11:00,072:INFO:               skopt: Not installed
+2022-12-15 15:11:00,073:INFO:              mlflow: Not installed
+2022-12-15 15:11:00,074:INFO:              gradio: Not installed
+2022-12-15 15:11:00,074:INFO:             fastapi: Not installed
+2022-12-15 15:11:00,074:INFO:             uvicorn: Not installed
+2022-12-15 15:11:00,075:INFO:              m2cgen: Not installed
+2022-12-15 15:11:00,076:INFO:           evidently: Not installed
+2022-12-15 15:11:00,076:INFO:                nltk: Not installed
+2022-12-15 15:11:00,076:INFO:            pyLDAvis: Not installed
+2022-12-15 15:11:00,076:INFO:              gensim: Not installed
+2022-12-15 15:11:00,076:INFO:               spacy: Not installed
+2022-12-15 15:11:00,076:INFO:           wordcloud: Not installed
+2022-12-15 15:11:00,076:INFO:            textblob: Not installed
+2022-12-15 15:11:00,081:INFO:               fugue: Not installed
+2022-12-15 15:11:00,081:INFO:           streamlit: Not installed
+2022-12-15 15:11:00,082:INFO:             prophet: Not installed
+2022-12-15 15:11:00,083:INFO:None
+2022-12-15 15:11:00,083:INFO:Set up data.
+2022-12-15 15:11:00,483:INFO:Set up train/test split.
+2022-12-15 15:11:00,631:INFO:Set up index.
+2022-12-15 15:11:00,636:INFO:Assigning column types.
+2022-12-15 15:11:00,652:INFO:Set up folding strategy.
+2022-12-15 15:11:00,652:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2022-12-15 15:11:01,158:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 15:11:01,169:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 15:11:01,426:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:11:01,428:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:11:01,861:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 15:11:01,865:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 15:11:02,127:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:11:02,128:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:11:02,128:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2022-12-15 15:11:02,371:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 15:11:02,477:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:11:02,478:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:11:02,648:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2022-12-15 15:11:02,887:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:11:02,888:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:11:02,888:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2022-12-15 15:11:03,232:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:11:03,233:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:11:03,670:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:11:03,671:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:11:03,672:INFO:Preparing preprocessing pipeline...
+2022-12-15 15:11:03,677:INFO:Set up simple imputation.
+2022-12-15 15:11:03,677:INFO:Set up grouping of rare categories.
+2022-12-15 15:11:15,353:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:11:15,419:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:11:17,636:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:11:17,664:INFO:Set up encoding of ordinal features.
+2022-12-15 15:11:17,676:INFO:Set up encoding of categorical features.
+2022-12-15 15:11:17,676:INFO:Set up variance threshold.
+2022-12-15 15:11:44,335:INFO:Finished creating preprocessing pipeline.
+2022-12-15 15:11:44,354:INFO:Pipeline: Pipeline(memory=Memory(location=/var/folders/05/vw9063r52vx14py3g67c010r0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Age', 'Height', 'Weight'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              missing_values=nan,
+                                                              strategy='mean',
+                                                              verbose='deprecated'))),
+                ('categorical_imputer',
+                 TransformerWr...
+                                    include=['Team', 'Year', 'City', 'Sport',
+                                             'Event'],
+                                    transformer=OneHotEncoder(cols=['Team',
+                                                                    'Year',
+                                                                    'City',
+                                                                    'Sport',
+                                                                    'Event'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=VarianceThreshold(threshold=0)))],
+         verbose=False)
+2022-12-15 15:11:44,354:INFO:Creating final display dataframe.
+2022-12-15 15:13:45,734:INFO:Setup display_container:                     Description            Value
+0                    Session id               13
+1                        Target           status
+2                   Target type           Binary
+3           Original data shape     (164932, 11)
+4        Transformed data shape    (164932, 896)
+5   Transformed train set shape    (115452, 896)
+6    Transformed test set shape     (49480, 896)
+7              Ordinal features                2
+8              Numeric features                3
+9          Categorical features                7
+10                   Preprocess             True
+11              Imputation type           simple
+12           Numeric imputation             mean
+13       Categorical imputation         constant
+14     Maximum one-hot encoding              600
+15              Encoding method             None
+16       Low variance threshold                0
+17               Fold Generator  StratifiedKFold
+18                  Fold Number               10
+19                     CPU Jobs               -1
+20                      Use GPU            False
+21               Log Experiment            False
+22              Experiment Name         olympics
+23                          USI             adda
+2022-12-15 15:13:46,058:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:13:46,059:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:13:46,297:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:13:46,297:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 15:13:46,363:INFO:setup() successfully completed in 166.31s...............
+2022-12-15 15:20:30,992:INFO:Initializing compare_models()
+2022-12-15 15:20:30,993:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f8917d4d600>, include=None, fold=5, round=4, cross_validation=True, sort=F1, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x7f8917d4d600>, 'include': None, 'exclude': None, 'fold': 5, 'round': 4, 'cross_validation': True, 'sort': 'F1', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2022-12-15 15:20:30,994:INFO:Checking exceptions
+2022-12-15 15:20:31,020:INFO:Preparing display monitor
+2022-12-15 15:20:31,352:INFO:Initializing Logistic Regression
+2022-12-15 15:20:31,353:INFO:Total runtime is 1.2866655985514323e-05 minutes
+2022-12-15 15:20:31,363:INFO:SubProcess create_model() called ==================================
+2022-12-15 15:20:31,365:INFO:Initializing create_model()
+2022-12-15 15:20:31,366:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f8917d4d600>, estimator=lr, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f89199ec190>, model_only=True, return_train_score=False, kwargs={})
+2022-12-15 15:20:31,366:INFO:Checking exceptions
+2022-12-15 15:20:31,427:INFO:Importing libraries
+2022-12-15 15:20:31,428:INFO:Copying training dataset
+2022-12-15 15:20:31,463:INFO:Defining folds
+2022-12-15 15:20:31,463:INFO:Declaring metric variables
+2022-12-15 15:20:31,470:INFO:Importing untrained model
+2022-12-15 15:20:31,478:INFO:Logistic Regression Imported successfully
+2022-12-15 15:20:31,500:INFO:Starting cross validation
+2022-12-15 15:20:31,523:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2022-12-15 15:21:03,177:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:21:03,192:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:21:03,541:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:21:03,616:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:21:13,803:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 9.74s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:21:13,838:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 9.72s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:21:13,938:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 9.63s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:21:14,026:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 9.68s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:21:40,029:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 8.44s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:21:40,247:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 8.55s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:21:40,529:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 8.61s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:21:40,671:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 8.69s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:23:24,088:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 2.87s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:23:43,773:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 3.01s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:23:47,342:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 4.90s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:23:48,129:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 5.25s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:25:07,342:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 1.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:25:56,248:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 3.02s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:25:58,553:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 2.86s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:26:10,273:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 7.40s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:31:35,812:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:444: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2022-12-15 15:31:39,168:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 0.56s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:31:47,453:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:31:50,657:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 2.93s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:31:59,282:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 2.74s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:32:12,041:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 2.70s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:32:18,690:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 1.07s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:32:38,939:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:258: UserWarning: Persisting input arguments took 2.27s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:33:15,433:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:33:26,909:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:444: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2022-12-15 15:33:29,199:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 12.21s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:33:29,843:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:444: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2022-12-15 15:33:33,066:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:33:34,980:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:33:35,100:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 1.81s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:33:36,676:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:444: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2022-12-15 15:33:37,555:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 2.39s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:33:41,521:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 1.85s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:33:42,016:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:33:44,006:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 2.36s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:33:44,571:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 2.39s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:33:49,579:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 1.33s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:33:51,134:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 4.87s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:33:55,162:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 1.07s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:34:01,703:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 0.94s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:34:06,124:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 0.82s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:34:09,178:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 0.60s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:34:18,963:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 0.91s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:34:24,617:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 0.80s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:34:42,279:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:258: UserWarning: Persisting input arguments took 0.90s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:34:47,665:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:258: UserWarning: Persisting input arguments took 0.74s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:34:47,831:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:258: UserWarning: Persisting input arguments took 0.83s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:35:02,081:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 2.69s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:35:28,056:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:192: UserWarning: Persisting input arguments took 1.43s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 15:37:51,648:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:444: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2022-12-15 15:37:53,793:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/preprocess/transformers.py:368: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[name] = column.replace(self._to_other[name], self.value)
+
+2022-12-15 15:37:54,861:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 0.93s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:37:57,778:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 1.00s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:38:05,111:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:246: UserWarning: Persisting input arguments took 0.81s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:38:20,266:WARNING:/Users/rajendravrk/opt/anaconda3/envs/MLG/lib/python3.10/site-packages/pycaret/internal/pipeline.py:258: UserWarning: Persisting input arguments took 0.76s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_transform(transformer, X)
+
+2022-12-15 15:38:22,536:INFO:Calculating mean and std
+2022-12-15 15:38:23,228:INFO:Creating metrics dataframe
+2022-12-15 15:38:24,912:INFO:Uploading results into container
+2022-12-15 15:38:24,982:INFO:Uploading model into container now
+2022-12-15 15:38:25,138:INFO:master_model_container: 1
+2022-12-15 15:38:25,138:INFO:display_container: 2
+2022-12-15 15:38:25,228:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=13, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2022-12-15 15:38:25,252:INFO:create_model() successfully completed......................................
+2022-12-15 15:38:29,750:INFO:SubProcess create_model() end ==================================
+2022-12-15 15:38:29,750:INFO:Creating metrics dataframe
+2022-12-15 15:38:29,844:INFO:Initializing K Neighbors Classifier
+2022-12-15 15:38:29,845:INFO:Total runtime is 17.9748775323232 minutes
+2022-12-15 15:38:29,852:INFO:SubProcess create_model() called ==================================
+2022-12-15 15:38:29,853:INFO:Initializing create_model()
+2022-12-15 15:38:29,853:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f8917d4d600>, estimator=knn, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f89199ec190>, model_only=True, return_train_score=False, kwargs={})
+2022-12-15 15:38:29,853:INFO:Checking exceptions
+2022-12-15 15:38:30,306:INFO:Importing libraries
+2022-12-15 15:38:30,306:INFO:Copying training dataset
+2022-12-15 15:38:30,344:INFO:Defining folds
+2022-12-15 15:38:30,345:INFO:Declaring metric variables
+2022-12-15 15:38:30,351:INFO:Importing untrained model
+2022-12-15 15:38:30,361:INFO:K Neighbors Classifier Imported successfully
+2022-12-15 15:38:30,381:INFO:Starting cross validation
+2022-12-15 15:38:30,393:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2022-12-15 16:12:32,900:INFO:Calculating mean and std
+2022-12-15 16:12:32,902:INFO:Creating metrics dataframe
+2022-12-15 16:12:32,910:INFO:Uploading results into container
+2022-12-15 16:12:32,911:INFO:Uploading model into container now
+2022-12-15 16:12:32,912:INFO:master_model_container: 2
+2022-12-15 16:12:32,912:INFO:display_container: 2
+2022-12-15 16:12:32,912:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2022-12-15 16:12:32,912:INFO:create_model() successfully completed......................................
+2022-12-15 16:12:33,132:INFO:SubProcess create_model() end ==================================
+2022-12-15 16:12:33,132:INFO:Creating metrics dataframe
+2022-12-15 16:12:33,199:INFO:Initializing Naive Bayes
+2022-12-15 16:12:33,199:INFO:Total runtime is 52.03079233169555 minutes
+2022-12-15 16:12:33,206:INFO:SubProcess create_model() called ==================================
+2022-12-15 16:12:33,207:INFO:Initializing create_model()
+2022-12-15 16:12:33,207:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f8917d4d600>, estimator=nb, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f89199ec190>, model_only=True, return_train_score=False, kwargs={})
+2022-12-15 16:12:33,207:INFO:Checking exceptions
+2022-12-15 16:12:33,222:INFO:Importing libraries
+2022-12-15 16:12:33,293:INFO:Copying training dataset
+2022-12-15 16:12:33,321:INFO:Defining folds
+2022-12-15 16:12:33,322:INFO:Declaring metric variables
+2022-12-15 16:12:33,327:INFO:Importing untrained model
+2022-12-15 16:12:33,334:INFO:Naive Bayes Imported successfully
+2022-12-15 16:12:33,347:INFO:Starting cross validation
+2022-12-15 16:12:33,384:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
