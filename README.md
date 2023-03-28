@@ -59,8 +59,15 @@
 
    Participation of Women through out the Winter Oympics
     
-![alternative text](reports/img/Women-participating-in-winter-Olympics.png) 
+![alternative text](reports/img/Women-participating-in-winter-Olympics.png)
 
+We find the best classifier using pycaret
+
+![alternative text](reports/img/Pycaret_classifier.png)
+
+Our best model prediction is as follows:
+
+![alternative text](reports/img/result.png)
 
 #### Other Members:
 
